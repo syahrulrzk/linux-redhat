@@ -11,3 +11,6 @@ cara melihat daftar <b>subscripton-manager</b>
 
 melakukan attach atau subscription ke pada repositori
 <pre>subscription-manager attach --auto</pre>
+
+melihat daftar subscription yang telah kita daftarkan
+<pre>subscription-manager list --consumed</pre>
