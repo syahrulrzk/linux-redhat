@@ -17,3 +17,6 @@ melihat daftar subscription yang telah kita daftarkan
 
 klo perintah diatas sudah dijalankan, sekarang kita akan melihat updatenya terdahulu.
 <pre>yum check-update</pre>
+
+sekarang kita tinggal update
+<pre>yum update</pre>
