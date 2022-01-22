@@ -3,6 +3,12 @@ subscription terlebih dahulu
 
 <pre>subscription-manager register</pre>
 
+Daftar dan otomatis berlangganan dalam satu langkah
+Gunakan perintah berikut untuk mendaftarkan sistem, lalu secara otomatis mengaitkan langganan apa pun yang tersedia yang cocok dengan sistem itu:
+
+Mentah
+<pre># subscription-manager register --username <username> --password <password> --auto-attach</pre>
+
 cara menampil alamat ip
 <pre> nmcli d show</pre>
 
