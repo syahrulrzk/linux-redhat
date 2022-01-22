@@ -14,3 +14,6 @@ melakukan attach atau subscription ke pada repositori
 
 melihat daftar subscription yang telah kita daftarkan
 <pre>subscription-manager list --consumed</pre>
+
+klo perintah diatas sudah dijalankan, sekarang kita akan melihat updatenya terdahulu.
+<pre>yum check-update</pre>
