@@ -8,3 +8,6 @@ cara menampil alamat ip
 
 cara melihat daftar <b>subscripton-manager</b>
 <pre>subscription-manager list --available</pre>
+
+melakukan attach atau subscription ke pada repositori
+<pre>subscription-manager attach --auto</pre>
