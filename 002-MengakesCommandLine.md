@@ -33,3 +33,25 @@ Untuk menjalankan shell, Anda harus masuk ke komputer di terminal. Terminal adal
 Komputer mungkin memiliki keyboard dan layar perangkat keras untuk input dan output yang terhubung langsung dengannya. Ini adalah konsol fisik mesin Linux. Konsol fisik mendukung beberapa konsol virtual, yang dapat menjalankan terminal terpisah. Setiap konsol virtual mendukung sesi login independen. Anda dapat beralih di antara mereka dengan menekan ```Ctrl+Alt``` dan tombol fungsi ( ```F1```melalui ```F6```) secara bersamaan. Sebagian besar konsol virtual ini menjalankan terminal yang menyediakan prompt login teks, dan jika Anda memasukkan nama pengguna dan kata sandi dengan benar, Anda akan masuk dan mendapatkan prompt shell.
 
 Komputer mungkin menyediakan prompt login grafis di salah satu konsol virtual. Anda dapat menggunakan ini untuk masuk ke lingkungan grafis. Lingkungan grafis juga berjalan pada konsol virtual. Untuk mendapatkan prompt shell Anda harus memulai program terminal di lingkungan grafis. Prompt shell disediakan di jendela aplikasi program terminal grafis Anda.
+
+### CATATAN
+
+Banyak administrator sistem memilih untuk tidak menjalankan lingkungan grafis di server mereka. Hal ini memungkinkan sumber daya yang akan digunakan oleh lingkungan grafis untuk digunakan oleh layanan server sebagai gantinya.
+
+Di Red Hat Enterprise Linux 8, jika lingkungan grafis tersedia, layar login akan berjalan di konsol virtual pertama, yang disebut tty1. Lima petunjuk masuk teks tambahan tersedia di konsol virtual dua sampai enam.
+
+Jika Anda masuk menggunakan layar masuk grafis, lingkungan grafis Anda akan dimulai pada konsol virtual pertama yang saat ini tidak digunakan oleh sesi masuk. Biasanya, sesi grafis Anda akan menggantikan prompt login di konsol virtual kedua ( tty2). Namun, jika konsol tersebut digunakan oleh sesi login teks aktif (bukan hanya prompt login), konsol virtual gratis berikutnya digunakan sebagai gantinya.
+
+Layar login grafis terus berjalan pada konsol virtual pertama ( tty1). Jika Anda sudah masuk ke sesi grafis, dan masuk sebagai pengguna lain di layar masuk grafis atau menggunakan Switch Useritem menu untuk mengalihkan pengguna di lingkungan grafis tanpa keluar, lingkungan grafis lain akan dimulai untuk pengguna itu di hari berikutnya. konsol virtual gratis. Ketika Anda keluar dari lingkungan grafis, itu akan keluar dan konsol fisik akan secara otomatis beralih kembali ke layar login grafis pada konsol virtual pertama.
+
+### CATATAN
+
+Di Red Hat Enterprise Linux 6 dan 7, layar login grafis berjalan di konsol virtual pertama, tetapi ketika Anda masuk ke lingkungan grafis awal Anda menggantikan layar login di konsol virtual pertama, bukan memulai di konsol virtual baru.
+
+Di Red Hat Enterprise Linux 5 dan sebelumnya, enam konsol virtual pertama selalu menyediakan perintah login teks. Jika lingkungan grafis berjalan, itu ada di konsol virtual tujuh (diakses melalui Ctrl+Alt+F7).
+
+Server tanpa kepala tidak memiliki keyboard dan layar yang terhubung secara permanen. Pusat data dapat diisi dengan banyak rak server tanpa kepala, dan tidak menyediakan masing-masing dengan keyboard dan tampilan akan menghemat ruang dan biaya. Untuk mengizinkan administrator masuk, server tanpa kepala mungkin memiliki prompt masuk yang disediakan oleh konsol serialnya, berjalan pada port serial yang terhubung ke server konsol jaringan untuk akses jarak jauh ke konsol serial.
+
+Konsol serial biasanya digunakan untuk memperbaiki server jika kartu jaringannya salah dikonfigurasi dan masuk melalui koneksi jaringannya sendiri menjadi tidak mungkin. Namun, sebagian besar waktu, server tanpa kepala diakses dengan cara lain melalui jaringan.
+
+
