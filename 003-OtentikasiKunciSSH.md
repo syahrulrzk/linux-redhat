@@ -10,3 +10,9 @@ Akibatnya, klien ssh Anda dapat secara otomatis mengotentikasi login Anda ke ser
 Untuk membuat kunci pribadi dan kunci publik yang cocok untuk otentikasi, gunakan ```ssh-keygen``` perintah. Secara default, kunci pribadi dan publik Anda masing-masing disimpan di file ```~/.ssh/id_rsa``` dan ```~/.ssh/id_rsa.pub``` file Anda.
 
 Jika Anda tidak menentukan frasa sandi saat ssh-keygenmeminta Anda, kunci pribadi yang dihasilkan tidak dilindungi. Dalam hal ini, siapa pun yang memiliki file kunci pribadi Anda dapat menggunakannya untuk otentikasi. Jika Anda menyetel frasa sandi, Anda harus memasukkan frasa sandi tersebut saat menggunakan kunci pribadi untuk autentikasi.
+
+<b>(Oleh karena itu, Anda akan menggunakan frasa sandi kunci pribadi daripada kata sandi Anda pada host jarak jauh untuk mengautentikasi.)</b>
+
+Anda dapat menjalankan program pembantu yang disebut ssh-agentyang dapat menyimpan sementara frasa sandi kunci pribadi Anda di memori pada awal sesi Anda untuk mendapatkan otentikasi tanpa kata sandi yang sebenarnya.
+
+Ini akan dibahas nanti di bagian ini. Contoh ssh-keygenperintah berikut menunjukkan pembuatan kunci pribadi yang dilindungi frasa sandi di samping kunci publik.
