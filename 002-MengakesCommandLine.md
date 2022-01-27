@@ -42,13 +42,13 @@ Di Red Hat Enterprise Linux 8, jika lingkungan grafis tersedia, layar login akan
 
 Jika Anda masuk menggunakan layar masuk grafis, lingkungan grafis Anda akan dimulai pada konsol virtual pertama yang saat ini tidak digunakan oleh sesi masuk. Biasanya, sesi grafis Anda akan menggantikan prompt login di konsol virtual kedua ( tty2). Namun, jika konsol tersebut digunakan oleh sesi login teks aktif (bukan hanya prompt login), konsol virtual gratis berikutnya digunakan sebagai gantinya.
 
-Layar login grafis terus berjalan pada konsol virtual pertama ( tty1). Jika Anda sudah masuk ke sesi grafis, dan masuk sebagai pengguna lain di layar masuk grafis atau menggunakan Switch Useritem menu untuk mengalihkan pengguna di lingkungan grafis tanpa keluar, lingkungan grafis lain akan dimulai untuk pengguna itu di hari berikutnya. konsol virtual gratis. Ketika Anda keluar dari lingkungan grafis, itu akan keluar dan konsol fisik akan secara otomatis beralih kembali ke layar login grafis pada konsol virtual pertama.
+Layar login grafis terus berjalan pada konsol virtual pertama (```tty1```). Jika Anda sudah masuk ke sesi grafis, dan masuk sebagai pengguna lain di layar masuk grafis atau menggunakan ```Switch User``` item menu untuk mengalihkan pengguna di lingkungan grafis tanpa keluar, lingkungan grafis lain akan dimulai untuk pengguna itu di hari berikutnya. konsol virtual gratis. Ketika Anda keluar dari lingkungan grafis, itu akan keluar dan konsol fisik akan secara otomatis beralih kembali ke layar login grafis pada konsol virtual pertama.
 
 ### CATATAN
 
 Di Red Hat Enterprise Linux 6 dan 7, layar login grafis berjalan di konsol virtual pertama, tetapi ketika Anda masuk ke lingkungan grafis awal Anda menggantikan layar login di konsol virtual pertama, bukan memulai di konsol virtual baru.
 
-Di Red Hat Enterprise Linux 5 dan sebelumnya, enam konsol virtual pertama selalu menyediakan perintah login teks. Jika lingkungan grafis berjalan, itu ada di konsol virtual tujuh (diakses melalui Ctrl+Alt+F7).
+Di Red Hat Enterprise Linux 5 dan sebelumnya, enam konsol virtual pertama selalu menyediakan perintah login teks. Jika lingkungan grafis berjalan, itu ada di konsol virtual tujuh (diakses melalui ```Ctrl+Alt+F7```).
 
 Server tanpa kepala tidak memiliki keyboard dan layar yang terhubung secara permanen. Pusat data dapat diisi dengan banyak rak server tanpa kepala, dan tidak menyediakan masing-masing dengan keyboard dan tampilan akan menghemat ruang dan biaya. Untuk mengizinkan administrator masuk, server tanpa kepala mungkin memiliki prompt masuk yang disediakan oleh konsol serialnya, berjalan pada port serial yang terhubung ke server konsol jaringan untuk akses jarak jauh ke konsol serial.
 
