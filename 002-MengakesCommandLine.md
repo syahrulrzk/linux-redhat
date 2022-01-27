@@ -27,3 +27,9 @@ Perintah yang dimasukkan pada prompt shell memiliki tiga bagian dasar:
 
 Perintah adalah nama program yang akan dijalankan. Ini mungkin diikuti oleh satu atau lebih opsi, yang menyesuaikan perilaku perintah atau apa yang akan dilakukannya. Opsi biasanya dimulai dengan satu atau dua tanda hubung ( ```-a ```atau ```--all```, misalnya) untuk membedakannya dari argumen. Perintah juga dapat diikuti oleh satu atau lebih argumen, yang sering menunjukkan target yang harus dijalankan oleh perintah tersebut. Misalnya, perintah usermod ```-L``` user01memiliki perintah ```( usermod)```, opsi ```( -L)```, dan argumen ```( user01)```. Efek dari perintah ini adalah mengunci kata sandi user01 akun pengguna.
 
+## LOGGING IN TO A LOCAL COMPUTER
+Untuk menjalankan shell, Anda harus masuk ke komputer di terminal. Terminal adalah antarmuka berbasis teks yang digunakan untuk memasukkan perintah ke dalam dan mencetak keluaran dari sistem komputer. Ada beberapa cara untuk melakukan ini.
+
+Komputer mungkin memiliki keyboard dan layar perangkat keras untuk input dan output yang terhubung langsung dengannya. Ini adalah konsol fisik mesin Linux. Konsol fisik mendukung beberapa konsol virtual, yang dapat menjalankan terminal terpisah. Setiap konsol virtual mendukung sesi login independen. Anda dapat beralih di antara mereka dengan menekan ```Ctrl+Alt``` dan tombol fungsi ( ```F1```melalui ```F6```) secara bersamaan. Sebagian besar konsol virtual ini menjalankan terminal yang menyediakan prompt login teks, dan jika Anda memasukkan nama pengguna dan kata sandi dengan benar, Anda akan masuk dan mendapatkan prompt shell.
+
+Komputer mungkin menyediakan prompt login grafis di salah satu konsol virtual. Anda dapat menggunakan ini untuk masuk ke lingkungan grafis. Lingkungan grafis juga berjalan pada konsol virtual. Untuk mendapatkan prompt shell Anda harus memulai program terminal di lingkungan grafis. Prompt shell disediakan di jendela aplikasi program terminal grafis Anda.
