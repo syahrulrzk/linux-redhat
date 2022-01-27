@@ -22,3 +22,6 @@ Ini akan dibahas nanti di bagian ini. Contoh ssh-keygenperintah berikut menunjuk
 Opsi ```-f``` dengan ```ssh-keygen``` perintah menentukan file tempat kunci disimpan. Dalam contoh sebelumnya, kunci privat dan publik disimpan dalam ```/home/user/.ssh/key-with-pass/home/user/.ssh/key-with-pass.pub``` file, masing-masing.
 
 Setelah kunci SSH dibuat, mereka disimpan secara default di direktori ```.ssh/``` dari direktori home pengguna. Mode izin harus ```600``` pada kunci pribadi dan ```644``` pada kunci publik.
+
+## Berbagi Kunci Publik
+Sebelum otentikasi berbasis kunci dapat digunakan, kunci publik perlu disalin ke sistem tujuan. Perintah ssh-copy-idmenyalin kunci publik dari pasangan kunci SSH ke sistem tujuan. Jika Anda menghilangkan jalur ke file kunci publik saat menjalankan ```ssh-copy-id```, itu menggunakan file default ```/home/user/.ssh/id_rsa.pub```.
