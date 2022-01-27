@@ -54,4 +54,28 @@ Server tanpa kepala tidak memiliki keyboard dan layar yang terhubung secara perm
 
 Konsol serial biasanya digunakan untuk memperbaiki server jika kartu jaringannya salah dikonfigurasi dan masuk melalui koneksi jaringannya sendiri menjadi tidak mungkin. Namun, sebagian besar waktu, server tanpa kepala diakses dengan cara lain melalui jaringan.
 
+## LOGGING IN OVER THE NETWORK
+Pengguna dan administrator Linux sering kali perlu mendapatkan akses shell ke sistem jarak jauh dengan menghubungkannya melalui jaringan. Dalam lingkungan komputasi modern, banyak server tanpa kepala sebenarnya adalah mesin virtual atau dijalankan sebagai instance cloud publik atau pribadi. Sistem ini tidak fisik dan tidak memiliki konsol perangkat keras nyata. Mereka bahkan mungkin tidak menyediakan akses ke konsol fisik (simulasi) atau konsol serial mereka.
 
+Di Linux, cara paling umum untuk mendapatkan prompt shell pada sistem jarak jauh adalah dengan menggunakan Secure Shell (```SSH```). Sebagian besar sistem Linux (termasuk Red Hat Enterprise Linux) dan macOS menyediakan OpenSSHprogram baris perintah sshuntuk tujuan ini.
+
+Dalam contoh ini, pengguna dengan prompt shell di host mesin digunakan sshuntuk masuk ke sistem Linux jarak jauh ```remotehost``` sebagai pengguna ```remoteuser```:
+
+<pre>[user@host ~]$ ssh remoteuser@remotehost
+remoteuser@remotehost's password: password
+[remoteuser@remotehost ~]$</pre>
+
+Perintah ```ssh``` mengenkripsi koneksi untuk mengamankan komunikasi terhadap penyadapan atau pembajakan kata sandi dan konten.
+
+Beberapa sistem (seperti instans cloud baru) tidak mengizinkan pengguna menggunakan kata sandi untuk masuk sshdemi keamanan yang lebih ketat. Cara alternatif untuk mengautentikasi ke mesin jarak jauh tanpa memasukkan kata sandi adalah melalui autentikasi kunci publik.
+
+Dengan metode otentikasi ini, pengguna memiliki file identitas khusus yang berisi kunci pribadi, yang setara dengan kata sandi, dan yang mereka rahasiakan. Akun mereka di server dikonfigurasi dengan kunci publik yang cocok, yang tidak harus dirahasiakan. Saat masuk, pengguna dapat mengonfigurasi sshuntuk memberikan kunci pribadi dan jika kunci publik yang cocok dipasang di akun itu di server jarak jauh, itu akan membuat mereka masuk tanpa meminta kata sandi.
+
+Pada contoh berikutnya, pengguna dengan prompt shell di host mesin masuk remotehost sebagai remoteuserusing ssh, menggunakan otentikasi kunci publik. Opsi -iini digunakan untuk menentukan file kunci pribadi pengguna, yaitu ```mylab.pem```. Kunci publik yang cocok sudah disiapkan sebagai kunci resmi di akun pengguna jarak jauh.
+
+<pre>[user@host ~]$ ssh -i mylab.pem remoteuser@remotehost
+[remoteuser@remotehost ~]$</pre>
+
+Agar ini berfungsi, file kunci pribadi harus hanya dapat dibaca oleh pengguna yang memiliki file tersebut. Dalam contoh sebelumnya, di mana kunci pribadi berada dalam ```mylab.pem``` file, perintah ```chmod 600 mylab.pem``` dapat digunakan untuk memastikan hal ini. Cara mengatur hak akses file dibahas secara lebih rinci di bab selanjutnya.
+
+Pengguna mungkin juga memiliki kunci pribadi yang dikonfigurasi yang dicoba secara otomatis, tetapi diskusi itu berada di luar cakupan bagian ini. Referensi di akhir bagian ini berisi tautan ke informasi lebih lanjut tentang topik ini.
