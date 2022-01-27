@@ -16,3 +16,9 @@ Jika Anda tidak menentukan frasa sandi saat ```ssh-keygen``` meminta Anda, kunci
 Anda dapat menjalankan program pembantu yang disebut ssh-agentyang dapat menyimpan sementara frasa sandi kunci pribadi Anda di memori pada awal sesi Anda untuk mendapatkan otentikasi tanpa kata sandi yang sebenarnya.
 
 Ini akan dibahas nanti di bagian ini. Contoh ssh-keygenperintah berikut menunjukkan pembuatan kunci pribadi yang dilindungi frasa sandi di samping kunci publik.
+
+
+<!-- ini gambar -->
+Opsi ```-f``` dengan ```ssh-keygen``` perintah menentukan file tempat kunci disimpan. Dalam contoh sebelumnya, kunci privat dan publik disimpan dalam ```/home/user/.ssh/key-with-pass/home/user/.ssh/key-with-pass.pub``` file, masing-masing.
+
+Setelah kunci SSH dibuat, mereka disimpan secara default di direktori ```.ssh/``` dari direktori home pengguna. Mode izin harus ```600``` pada kunci pribadi dan ```644``` pada kunci publik.
