@@ -79,3 +79,35 @@ Pada contoh berikutnya, pengguna dengan prompt shell di host mesin masuk remoteh
 Agar ini berfungsi, file kunci pribadi harus hanya dapat dibaca oleh pengguna yang memiliki file tersebut. Dalam contoh sebelumnya, di mana kunci pribadi berada dalam ```mylab.pem``` file, perintah ```chmod 600 mylab.pem``` dapat digunakan untuk memastikan hal ini. Cara mengatur hak akses file dibahas secara lebih rinci di bab selanjutnya.
 
 Pengguna mungkin juga memiliki kunci pribadi yang dikonfigurasi yang dicoba secara otomatis, tetapi diskusi itu berada di luar cakupan bagian ini. Referensi di akhir bagian ini berisi tautan ke informasi lebih lanjut tentang topik ini.
+
+CATATAN
+
+Pertama kali Anda masuk ke mesin baru, Anda akan diminta dengan peringatan dari ssh bahwa itu tidak dapat menetapkan keaslian host:
+
+<pre>[user@host ~]$ ssh -i mylab.pem remoteuser@remotehost
+The authenticity of host 'remotehost (192.0.2.42)' can't be
+established.
+ECDSA key fingerprint is
+47:bf:82:cd:fa:68:06:ee:d8:83:03:1a:bb:29:14:a3.
+Are you sure you want to continue connecting (yes/no)? yes
+[remoteuser@remotehost ~]$</pre>
+
+Setiap kali Anda terhubung ke host jarak jauh dengan ```ssh```, host jarak jauh mengirimkan ssh kunci hostnya untuk mengautentikasi dirinya sendiri dan untuk membantu menyiapkan komunikasi terenkripsi. Perintah tersebut ```ssh``` membandingkannya dengan daftar kunci host yang disimpan untuk memastikannya tidak berubah. Jika kunci host telah berubah, ini mungkin menunjukkan bahwa seseorang mencoba berpura-pura menjadi host tersebut untuk membajak koneksi yang juga dikenal sebagai serangan man-in-the-middle. Di SSH, kunci host melindungi dari serangan ```man-in-the-middle```, kunci host ini unik untuk setiap server, dan mereka perlu diubah secara berkala dan setiap kali ada dugaan kompromi.
+
+Anda akan mendapatkan peringatan ini jika mesin lokal Anda tidak memiliki kunci host yang disimpan untuk host jarak jauh. Jika Anda memasukkan yes, kunci host yang dikirim oleh host jarak jauh akan diterima dan disimpan untuk referensi di masa mendatang. Login akan dilanjutkan, dan Anda tidak akan melihat pesan ini lagi saat terhubung ke host ini. Jika Anda memasukkan no, kunci host akan ditolak dan koneksi ditutup.
+
+Jika mesin lokal memiliki kunci host yang disimpan dan tidak cocok dengan yang sebenarnya dikirim oleh host jarak jauh, koneksi akan secara otomatis ditutup dengan peringatan.
+
+## LOGGING OUT
+Ketika Anda selesai menggunakan shell dan ingin keluar, Anda dapat memilih salah satu dari beberapa cara untuk mengakhiri sesi. Anda dapat memasukkan exitperintah untuk mengakhiri sesi shell saat ini. Atau, selesaikan sesi dengan menekan Ctrl+D.
+
+Berikut ini adalah contoh pengguna yang keluar dari sesi SSH:
+
+<pre>[remoteuser@remotehost ~]$ exit
+logout
+Connection to remotehost closed.
+[user@host ~]$</pre>
+
+Untuk informasi lebih lanjut tentang OpenSSH dan otentikasi kunci publik, lihat bab Menggunakan komunikasi aman antara dua sistem dengan OpenSSH di jaringan Red Hat Enterprise Linux 8 Mengamankan di
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html- single/securing_networks/assembly_using-secure-communications-with-openssh- securing-networks
+
