@@ -19,27 +19,31 @@ dalam pembuatannya kita dapat memanfaatkannya pula sebagai public dan private cl
   <li>Membuat Service Tenant dan Service User</li>
  </ul>
 ## Bab 2: Glance (image)
-· Introduction Glance
-· Architecture Glance
-· Komponen Glance
-· Konsep Glance
-· Installation Glance
-· Konfigurasi Image service dengan identity service
-· Konfigurasi Image service dengan object storage
-· Membuat image openstack
+<ul>
+ <li>Introduction Glance</li>
+ <li>Architecture Glance</li>
+ <li>Komponen Glance</li>
+ <li>Konsep Glance</li>
+ <li>Installation Glance</li>
+ <li>Konfigurasi Image service dengan identity service</li>
+ <li>Konfigurasi Image service dengan object storage</li>
+ <li>Membuat image openstack</li>
+ </ul>
 ## Bab 3: Nova (Compute)
-· Introduction Compute
-· Architecture Nova
-· Komponen Nova
-· Konsep Nova
-· Installation Openstack Compute
-· Konfigurasi Database Compute
-· Konfigurasi Openstack Compute
-· Konfigurasi Openstack Compute dengan identity service
-· Restart Service di Openstack Compute
-· Cek Service di Openstack Compute
-· Menggunakan Openstack Compute
-
+<ul>
+ <li>Introduction Compute</li>
+ <li>Architecture Nova</li>
+ <li>Komponen Nova</li>
+ <li>Konsep Nova</li>
+ <li>Installation Openstack Compute</li>
+ <li>Konfigurasi Database Compute</li>
+ <li>Konfigurasi Openstack Compute</li>
+ <li>Konfigurasi Openstack Compute dengan identity service</li>
+ <li>Restart Service di Openstack Compute</li>
+ <li>Cek Service di Openstack Compute</li>
+ <li>Menggunakan Openstack Compute</li>
+</ul>
+  
 ## Bab 4: Neutron (Network)
 · Introduction Openstack Networking
 · Installasi Neutron dan Openvswitch
