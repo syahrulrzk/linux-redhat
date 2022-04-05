@@ -48,51 +48,51 @@ dalam pembuatannya kita dapat memanfaatkannya pula sebagai public dan private cl
   
 ## Bab 4: Neutron (Network)
 <ul>
- Introduction Openstack Networking
- Installasi Neutron dan Openvswitch
- Konfigurasi Neutron dan Openvswitch
- Installasi dan konfigurasi Neutron API Service
- Membuat tenant pada Neutron
- Membuat External Floating IP pada Neutron
- Konfigurasi distributed router virtual pada instance
+ <li>Introduction Openstack Networking
+ <li>Installasi Neutron dan Openvswitch
+ <li>Konfigurasi Neutron dan Openvswitch
+ <li>Installasi dan konfigurasi Neutron API Service
+ <li>Membuat tenant pada Neutron
+ <li>Membuat External Floating IP pada Neutron
+ <li>Konfigurasi distributed router virtual pada instance
 </ul>
 
 ## Bab 5: Cinder (Block Storage)
 <ul>
- Introduction Openstack Cinder
- Konfigurasi Cinder (Volume)
- Konfigurasi Cinder + Compute
- Membuat Volume
- Menambah Volume ke instance
- Menghapus Volume
+ <li>Introduction Openstack Cinder
+ <li>Konfigurasi Cinder (Volume)
+ <li>Konfigurasi Cinder + Compute
+ <li>Membuat Volume
+ <li>Menambah Volume ke instance
+ <li>Menghapus Volume
  </ul>
  
 ## Bab 6: Swift (Object Storage)
 <ul>
- Introduction Openstack Swift
- Architecture Swift
- Komponen Swift
- Konsep Swift
- Konfigurasi Swift dan user di keystone
- Installation and Configuration Openstack Object Storage + proxy
- Installation and Configuration Openstack Object Storage + node
- Konfigurasi Physical Storage
- Konfigurasi Storage Replication
- Konfigurasi Openstack Object Storage + Storage Device
- Membuat Object Storage rings
- Restart openstack Object Storage
- Membuat Containers
- Mengupload Object
+ <li>Introduction Openstack Swift
+ <li>Architecture Swift
+ <li>Komponen Swift
+ <li>Konsep Swift
+ <li>Konfigurasi Swift dan user di keystone
+ <li>Installation and Configuration Openstack Object Storage + proxy
+ <li>Installation and Configuration Openstack Object Storage + node
+ <li>Konfigurasi Physical Storage
+ <li>Konfigurasi Storage Replication
+ <li>Konfigurasi Openstack Object Storage + Storage Device
+ <li>Membuat Object Storage rings
+ <li>Restart openstack Object Storage
+ <li>Membuat Containers
+ <li>Mengupload Object
  </ul>
  
 ## Bab 7: Horizon (Dasbosrd)
 <ul>
- Introduction Horizon
- Installasi dashboard pada openstack
- Mengatur key management melalui dashboard
- Mengatur neutron melalui dashboard
- Mengatur security group melalui dashboard
- Membuat instance melalui dashboard
- Menghapus instance melalui dashboard
- Membuat tenant baru melalui dashboard
+ <li>Introduction Horizon
+ <li>Installasi dashboard pada openstack
+ <li>Mengatur key management melalui dashboard
+ <li>Mengatur neutron melalui dashboard
+ <li>Mengatur security group melalui dashboard
+<li>Membuat instance melalui dashboard
+ <li>Menghapus instance melalui dashboard
+ <li>Membuat tenant baru melalui dashboard
 </ul>
