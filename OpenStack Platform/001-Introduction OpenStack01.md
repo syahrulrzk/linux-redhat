@@ -1,4 +1,4 @@
-Redhat OpenStack Platform 16.2
+# Redhat OpenStack Platform 16.2
 
 Rilis Red Hat OpenStack Platform ini didasarkan pada rilis OpenStack "Train". Ini mencakup fitur tambahan, masalah yang diketahui, dan masalah yang diselesaikan khusus untuk Red Hat OpenStack Platform.
 
