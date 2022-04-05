@@ -29,6 +29,7 @@ dalam pembuatannya kita dapat memanfaatkannya pula sebagai public dan private cl
  <li>Konfigurasi Image service dengan object storage</li>
  <li>Membuat image openstack</li>
  </ul>
+ 
 ## Bab 3: Nova (Compute)
 <ul>
  <li>Introduction Compute</li>
@@ -54,6 +55,7 @@ dalam pembuatannya kita dapat memanfaatkannya pula sebagai public dan private cl
  Membuat External Floating IP pada Neutron
  Konfigurasi distributed router virtual pada instance
 </ul>
+
 ## Bab 5: Cinder (Block Storage)
 <ul>
  Introduction Openstack Cinder
@@ -63,6 +65,7 @@ dalam pembuatannya kita dapat memanfaatkannya pula sebagai public dan private cl
  Menambah Volume ke instance
  Menghapus Volume
  </ul>
+ 
 ## Bab 6: Swift (Object Storage)
 <ul>
  Introduction Openstack Swift
@@ -80,6 +83,7 @@ dalam pembuatannya kita dapat memanfaatkannya pula sebagai public dan private cl
  Membuat Containers
  Mengupload Object
  </ul>
+ 
 ## Bab 7: Horizon (Dasbosrd)
 <ul>
  Introduction Horizon
