@@ -5,17 +5,19 @@ dimanfaatkan untuk membangun cloud berupa layanan Infastructure-as-a-Service (I-
 dalam pembuatannya kita dapat memanfaatkannya pula sebagai public dan private cloud.
 
 ## Bab 1: Keystone (identity)
-· Introduction Keystone
-· Architecture Keystone
-· Komponen Keystone
-· Konsep Keystone
-· Installation Keystone
-· Membuat Tenant pada Keystone
-· Konfigurasi Rule pada Keystone
-· Menambah User pada Keystone
-· Keystone Authentication
-· Menambah Service Endpoint
-· Membuat Service Tenant dan Service User
+<ul>
+  <li>Introduction Keystone</li>
+  <li>Architecture Keystone</li>
+  <li>Komponen Keystone</li>
+  <li>Konsep Keystone</li>
+  <li>Installation Keystone</li>
+  <li>Membuat Tenant pada Keystone</li>
+  <li>Konfigurasi Rule pada Keystone</li>
+  <li>Menambah User pada Keystone</li>
+  <li>Keystone Authentication</li>
+  <li>Menambah Service Endpoint</li>
+  <li>Membuat Service Tenant dan Service User</li>
+ </ul>
 ## Bab 2: Glance (image)
 · Introduction Glance
 · Architecture Glance
