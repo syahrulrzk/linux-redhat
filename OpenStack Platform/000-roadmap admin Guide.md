@@ -3,7 +3,8 @@
 OpenStack merupakan salah satu software dengan lisensi open source yang dapat
 dimanfaatkan untuk membangun cloud berupa layanan Infastructure-as-a-Service (I-a-a-S)
 dalam pembuatannya kita dapat memanfaatkannya pula sebagai public dan private cloud.
-Bab 1: Keystone (identity)
+
+## Bab 1: Keystone (identity)
 · Introduction Keystone
 · Architecture Keystone
 · Komponen Keystone
@@ -15,7 +16,7 @@ Bab 1: Keystone (identity)
 · Keystone Authentication
 · Menambah Service Endpoint
 · Membuat Service Tenant dan Service User
-Bab 2: Glance (image)
+## Bab 2: Glance (image)
 · Introduction Glance
 · Architecture Glance
 · Komponen Glance
@@ -24,7 +25,7 @@ Bab 2: Glance (image)
 · Konfigurasi Image service dengan identity service
 · Konfigurasi Image service dengan object storage
 · Membuat image openstack
-Bab 3: Nova (Compute)
+## Bab 3: Nova (Compute)
 · Introduction Compute
 · Architecture Nova
 · Komponen Nova
@@ -37,7 +38,7 @@ Bab 3: Nova (Compute)
 · Cek Service di Openstack Compute
 · Menggunakan Openstack Compute
 
-Bab 4: Neutron (Network)
+## Bab 4: Neutron (Network)
 · Introduction Openstack Networking
 · Installasi Neutron dan Openvswitch
 · Konfigurasi Neutron dan Openvswitch
@@ -45,14 +46,14 @@ Bab 4: Neutron (Network)
 · Membuat tenant pada Neutron
 · Membuat External Floating IP pada Neutron
 · Konfigurasi distributed router virtual pada instance
-Bab 5: Cinder (Block Storage)
+## Bab 5: Cinder (Block Storage)
 · Introduction Openstack Cinder
 · Konfigurasi Cinder (Volume)
 · Konfigurasi Cinder + Compute
 · Membuat Volume
 · Menambah Volume ke instance
 · Menghapus Volume
-Bab 6: Swift (Object Storage)
+## Bab 6: Swift (Object Storage)
 · Introduction Openstack Swift
 · Architecture Swift
 · Komponen Swift
@@ -67,7 +68,7 @@ Bab 6: Swift (Object Storage)
 · Restart openstack Object Storage
 · Membuat Containers
 · Mengupload Object
-Bab 7: Horizon (Dasbosrd)
+## Bab 7: Horizon (Dasbosrd)
 · Introduction Horizon
 · Installasi dashboard pada openstack
 · Mengatur key management melalui dashboard
