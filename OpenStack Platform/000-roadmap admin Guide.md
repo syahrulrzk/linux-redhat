@@ -18,6 +18,7 @@ dalam pembuatannya kita dapat memanfaatkannya pula sebagai public dan private cl
   <li>Menambah Service Endpoint</li>
   <li>Membuat Service Tenant dan Service User</li>
  </ul>
+ 
 ## Bab 2: Glance (image)
 <ul>
  <li>Introduction Glance</li>
